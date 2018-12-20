@@ -46,6 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DifferentUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DifferentUsers.Designer.cs">
+      <DependentUpon>DifferentUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FestivalListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FestivalListForm.Designer.cs">
+      <DependentUpon>FestivalListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupSelect.Designer.cs">
+      <DependentUpon>GroupSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TinderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinderForm.Designer.cs">
+      <DependentUpon>TinderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMatch.Designer.cs">
+      <DependentUpon>UserMatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="VriendenToevoegenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +102,24 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DifferentUsers.resx">
+      <DependentUpon>DifferentUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FestivalListForm.resx">
+      <DependentUpon>FestivalListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupSelect.resx">
+      <DependentUpon>GroupSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TinderForm.resx">
+      <DependentUpon>TinderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMatch.resx">
+      <DependentUpon>UserMatch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VriendenToevoegenForm.resx">
       <DependentUpon>VriendenToevoegenForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +163,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Digital__Design_128-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonFestival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonLokaal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonStar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircleA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achtergrond7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonUser1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

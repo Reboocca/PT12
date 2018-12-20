@@ -64,6 +64,7 @@
     <Compile Include="FestivalListForm.Designer.cs">
       <DependentUpon>FestivalListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Group.cs" />
     <Compile Include="GroupSelect.cs">
       <SubType>Form</SubType>
     </Compile>

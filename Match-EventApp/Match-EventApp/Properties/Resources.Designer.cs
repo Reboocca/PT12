@@ -163,6 +163,16 @@ namespace Match_EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ButtonHeart {
+            get {
+                object obj = ResourceManager.GetObject("ButtonHeart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ButtonLokaal {
             get {
                 object obj = ResourceManager.GetObject("ButtonLokaal", resourceCulture);
@@ -176,6 +186,36 @@ namespace Match_EventApp.Properties {
         internal static System.Drawing.Bitmap ButtonMessage {
             get {
                 object obj = ResourceManager.GetObject("ButtonMessage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonPlus {
+            get {
+                object obj = ResourceManager.GetObject("ButtonPlus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonStar {
+            get {
+                object obj = ResourceManager.GetObject("ButtonStar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CircleA {
+            get {
+                object obj = ResourceManager.GetObject("CircleA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

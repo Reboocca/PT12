@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -54,7 +55,7 @@ namespace Match_EventApp
             }
             else
             {
-                if (db.updateUserInfo(tbVoornaam.Text, tbAchternaam.Text, leeftijd, tbHobby.Text, tbFest.Text, tbGenre.Text, cbGeslacht.SelectedIndex))
+                if (db.updateUserInfo(tbVoornaam.Text, tbAchternaam.Text, leeftijd, tbHobby.Text, tbFest.Text, tbGenre.Text, cbGeslacht.SelectedIndex, foto))
                 {
                     MessageBox.Show("Saved");
                     BTregister.Enabled = false;
@@ -68,12 +69,12 @@ namespace Match_EventApp
 
         private void BTfoto_toevoegen_Click(object sender, EventArgs e)
         {
-            foto.Filter          = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
-            foto.Title           = "Selecteer een foto";
+            foto.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+            foto.Title  = "Selecteer een foto";
             
             if (foto.ShowDialog() == DialogResult.OK)
             {
-                setImage = true;
+                setImage                                = true;
                 BTfoto_toevoegen.BackgroundImage        = new Bitmap(foto.FileName);
                 BTfoto_toevoegen.BackgroundImageLayout  = ImageLayout.Stretch;
             }

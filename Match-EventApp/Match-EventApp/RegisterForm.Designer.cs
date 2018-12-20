@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cbGeslacht = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbLeeftijd = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,7 +55,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.tbVoornaam = new System.Windows.Forms.TextBox();
-            this.cbGeslacht = new System.Windows.Forms.ComboBox();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,6 +87,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(155, 29);
             this.panel4.TabIndex = 8;
+            // 
+            // cbGeslacht
+            // 
+            this.cbGeslacht.FormattingEnabled = true;
+            this.cbGeslacht.Items.AddRange(new object[] {
+            "Man",
+            "Vrouw"});
+            this.cbGeslacht.Location = new System.Drawing.Point(3, 5);
+            this.cbGeslacht.Name = "cbGeslacht";
+            this.cbGeslacht.Size = new System.Drawing.Size(149, 21);
+            this.cbGeslacht.TabIndex = 22;
             // 
             // label1
             // 
@@ -348,17 +359,6 @@
             this.tbVoornaam.Name = "tbVoornaam";
             this.tbVoornaam.Size = new System.Drawing.Size(152, 20);
             this.tbVoornaam.TabIndex = 3;
-            // 
-            // cbGeslacht
-            // 
-            this.cbGeslacht.FormattingEnabled = true;
-            this.cbGeslacht.Items.AddRange(new object[] {
-            "Man",
-            "Vrouw"});
-            this.cbGeslacht.Location = new System.Drawing.Point(3, 5);
-            this.cbGeslacht.Name = "cbGeslacht";
-            this.cbGeslacht.Size = new System.Drawing.Size(149, 21);
-            this.cbGeslacht.TabIndex = 22;
             // 
             // RegisterForm
             // 

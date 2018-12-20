@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Specialized;
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -90,53 +92,50 @@ namespace Match_EventApp.Classes
             return b;
         }
 
-        public bool updateUserInfo(string v, string a, int l, string h, string f, string g, int ge)
+        public bool updateUserInfo(string v, string a, int l, string h, string f, string g, int ge, OpenFileDialog foto)
         {
             bool b = false;
-            connOpen();
-
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".profiel " +
-                "(`idAccount`,`voornaam`, `achternaam`, `leeftijd`, `hobbys`, `fav_festival`, `fav_genre_films`, `geslacht`) " +
-                "VALUES ( LAST_INSERT_ID(),'" + v + "', '" + a + "', " + l + ", '" + h + "', '" + f + "', '" + g + "', " + ge + ");");
-            cmd.Connection = connect;
-
-            try
+            string url = savedFotoAsync(foto);
+            if (url != "false")
             {
-                int insert = cmd.ExecuteNonQuery();
-                if (insert > 0)
+                connOpen();
+
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".profiel " +
+                    "(`idAccount`,`voornaam`, `achternaam`, `leeftijd`, `hobbys`, `fav_festival`, `fav_genre_films`, `geslacht`, `foto`) " +
+                    "VALUES ( LAST_INSERT_ID(),'" + v + "', '" + a + "', " + l + ", '" + h + "', '" + f + "', '" + g + "', " + ge + ", '" + url + "');");
+                cmd.Connection = connect;
+
+                try
                 {
-                    b = true;
-                    connClose();
+                    int insert = cmd.ExecuteNonQuery();
+                    if (insert > 0)
+                    {
+                        b = true;
+                        connClose();
+                    }
+                }
+                catch (Exception)
+                {
+                    b = false;
                 }
             }
-            catch (Exception)
-            {
-                b = false;
-            }
+
+            
 
             return b;
         }
 
-        private async Task<string> savedFotoAsync(FileInfo f)
+        private string savedFotoAsync(OpenFileDialog file)
         {
-            string url = null;
-            /*
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://your.url.com/");
-            MultipartFormDataContent form = new MultipartFormDataContent();
-            HttpContent content = new StringContent("fileToUpload");
-            form.Add(content, "fileToUpload");
-            var stream = await f.OpenStreamForReadAsync();
-            content = new StreamContent(stream);
-            content.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
-            {
-                Name = "fileToUpload",
-                FileName = f.Name
-            };
-            form.Add(content);
-            var response = await client.PostAsync("upload.php", form);
-            return response.Content.ReadAsStringAsync().Result;
-            */
+            string url = "";
+
+            WebClient client = new WebClient();
+            string myFile = file.FileName;
+            client.Credentials = CredentialCache.DefaultCredentials;
+            var response = client.UploadFile(@"http://i412769.hera.fhict.nl/FUN12/upload_image.php", "POST", myFile);
+            url = client.Encoding.GetString(response);
+            client.Dispose();
+
             return url;
         }
 

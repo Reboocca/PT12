@@ -133,6 +133,16 @@ namespace Match_EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Achtergrond7 {
+            get {
+                object obj = ResourceManager.GetObject("Achtergrond7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button_close_512 {
             get {
                 object obj = ResourceManager.GetObject("button_close-512", resourceCulture);
@@ -206,6 +216,16 @@ namespace Match_EventApp.Properties {
         internal static System.Drawing.Bitmap ButtonStar {
             get {
                 object obj = ResourceManager.GetObject("ButtonStar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonUser1 {
+            get {
+                object obj = ResourceManager.GetObject("ButtonUser1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

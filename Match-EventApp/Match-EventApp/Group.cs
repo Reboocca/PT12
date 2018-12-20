@@ -16,7 +16,7 @@ namespace Match_EventApp
 
         public void GroupJoin()
         {
-            //"profiel" toevoegen aan de list
+            //profiel toevoegen aan de list
             group1.Add(test);
         }
     }

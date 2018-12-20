@@ -64,6 +64,12 @@
     <Compile Include="FestivalListForm.Designer.cs">
       <DependentUpon>FestivalListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GroupSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupSelect.Designer.cs">
+      <DependentUpon>GroupSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="TinderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FestivalListForm.resx">
       <DependentUpon>FestivalListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupSelect.resx">
+      <DependentUpon>GroupSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TinderForm.resx">
       <DependentUpon>TinderForm.cs</DependentUpon>

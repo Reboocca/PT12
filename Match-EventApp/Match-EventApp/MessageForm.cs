@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Match_EventApp
 {
-    public partial class TinderForm : Form
+    public partial class MessageForm : Form
     {
-        public TinderForm()
+        public MessageForm()
         {
             InitializeComponent();
         }

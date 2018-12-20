@@ -113,7 +113,7 @@
             this.BTregister.Name = "BTregister";
             this.BTregister.Size = new System.Drawing.Size(107, 46);
             this.BTregister.TabIndex = 6;
-            this.BTregister.Text = " ";
+            this.BTregister.Text = "Register";
             this.BTregister.UseVisualStyleBackColor = false;
             this.BTregister.Click += new System.EventHandler(this.BTregister_Click);
             // 

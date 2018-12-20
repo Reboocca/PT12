@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TinderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinderForm.Designer.cs">
+      <DependentUpon>TinderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="VriendenToevoegenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,12 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TinderForm.resx">
+      <DependentUpon>TinderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VriendenToevoegenForm.resx">
       <DependentUpon>VriendenToevoegenForm.cs</DependentUpon>
     </EmbeddedResource>

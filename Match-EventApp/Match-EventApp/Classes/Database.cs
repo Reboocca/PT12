@@ -1,22 +1,32 @@
 ﻿using System;
+using System.IO;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Match_EventApp.Classes
 {
     class Database
     {
-        private string server;
-        private string username;
-        private string pwd;
-        private string database;
+        private static string server;
+        private static string username;
+        private static string pwd;
+        private static string database;
         private MySqlConnection connect;
 
-        public Database(string server, string username, string database, string pwd)
+        public Database(string s, string u, string d, string p)
         {
-            this.server = server;
-            this.username = username;
-            this.pwd = pwd;
-            this.database = database;
+            server      = s;
+            username    = u;
+            pwd         = p;
+            database    = d;
+        }
+        
+        public Database()
+        {
+
         }
 
         private void connOpen()
@@ -54,12 +64,12 @@ namespace Match_EventApp.Classes
             return b;
         }
 
-        public bool register(string username, string pwd)
+        public bool register(string u, string p)
         {
             bool b = false;
             connOpen();
 
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".account (`username`, `password`) VALUES ('" + username + "', '" + pwd + "');");
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".account (`username`, `password`) VALUES ('" + u + "', '" + p + "');");
             cmd.Connection = connect;
 
             try
@@ -67,11 +77,7 @@ namespace Match_EventApp.Classes
                 int register = cmd.ExecuteNonQuery();
                 if (register > 0)
                 {
-                    if (login(username, pwd))
-                    {
-                        b = true;
-                    }
-
+                    b = true;
                     connClose();
                 }
             }
@@ -84,24 +90,55 @@ namespace Match_EventApp.Classes
             return b;
         }
 
-        public int getNewID(string returncol, string table, string column, string value)
+        public bool updateUserInfo(string v, string a, int l, string h, string f, string g, int ge)
         {
-            int id = 0;
+            bool b = false;
             connOpen();
 
-            MySqlCommand cmd = new MySqlCommand("SELECT " + returncol + " FROM " + database + "." + table + " WHERE " + column + " = '" + value + "' LIMIT 0, 1;");
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".profiel " +
+                "(`idAccount`,`voornaam`, `achternaam`, `leeftijd`, `hobbys`, `fav_festival`, `fav_genre_films`, `geslacht`) " +
+                "VALUES ( LAST_INSERT_ID(),'" + v + "', '" + a + "', " + l + ", '" + h + "', '" + f + "', '" + g + "', " + ge + ");");
             cmd.Connection = connect;
-            MySqlDataReader getId = cmd.ExecuteReader();
 
-            if (getId.HasRows)
+            try
             {
-                while (getId.Read())
+                int insert = cmd.ExecuteNonQuery();
+                if (insert > 0)
                 {
-                    id = getId.GetInt32(0);
+                    b = true;
+                    connClose();
                 }
             }
+            catch (Exception)
+            {
+                b = false;
+            }
 
-            return id;
+            return b;
         }
+
+        private async Task<string> savedFotoAsync(FileInfo f)
+        {
+            string url = null;
+            /*
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://your.url.com/");
+            MultipartFormDataContent form = new MultipartFormDataContent();
+            HttpContent content = new StringContent("fileToUpload");
+            form.Add(content, "fileToUpload");
+            var stream = await f.OpenStreamForReadAsync();
+            content = new StreamContent(stream);
+            content.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
+            {
+                Name = "fileToUpload",
+                FileName = f.Name
+            };
+            form.Add(content);
+            var response = await client.PostAsync("upload.php", form);
+            return response.Content.ReadAsStringAsync().Result;
+            */
+            return url;
+        }
+
     }
 }

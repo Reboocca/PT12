@@ -49,7 +49,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(234, 414);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -59,7 +59,7 @@
             // tbUsername
             // 
             this.tbUsername.Location = new System.Drawing.Point(2, 2);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(2);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(152, 20);
             this.tbUsername.TabIndex = 3;
@@ -69,7 +69,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.panel4.Controls.Add(this.tbUsername);
             this.panel4.Location = new System.Drawing.Point(37, 272);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(155, 24);
             this.panel4.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
             this.panel3.Controls.Add(this.tbPassword);
             this.panel3.Location = new System.Drawing.Point(37, 317);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(155, 24);
             this.panel3.TabIndex = 4;
@@ -87,7 +87,7 @@
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(2, 3);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(2);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(152, 20);
             this.tbPassword.TabIndex = 3;
@@ -100,7 +100,7 @@
             this.BTlogin.Font = new System.Drawing.Font("Leelawadee UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTlogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTlogin.Location = new System.Drawing.Point(37, 355);
-            this.BTlogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTlogin.Margin = new System.Windows.Forms.Padding(2);
             this.BTlogin.Name = "BTlogin";
             this.BTlogin.Size = new System.Drawing.Size(72, 37);
             this.BTlogin.TabIndex = 5;
@@ -117,11 +117,11 @@
             this.BTregister.Font = new System.Drawing.Font("Leelawadee UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTregister.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTregister.Location = new System.Drawing.Point(113, 355);
-            this.BTregister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTregister.Margin = new System.Windows.Forms.Padding(2);
             this.BTregister.Name = "BTregister";
             this.BTregister.Size = new System.Drawing.Size(80, 37);
             this.BTregister.TabIndex = 6;
-            this.BTregister.Text = " ";
+            this.BTregister.Text = " Register";
             this.BTregister.UseVisualStyleBackColor = false;
             this.BTregister.Click += new System.EventHandler(this.BTregister_Click);
             // 
@@ -159,7 +159,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(200, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(24, 22);
             this.button1.TabIndex = 9;
@@ -186,7 +186,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InlogForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

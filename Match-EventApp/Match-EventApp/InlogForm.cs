@@ -26,11 +26,11 @@ namespace Match_EventApp
             {
                 if(dbs.login(tbUsername.Text, tbPassword.Text))
                 {
-                    MessageBox.Show("Ingelogd");
+                    MessageBox.Show("Ingelogd -> naar home page");
                 }
                 else
                 {
-                    MessageBox.Show("Gebruikersnaam en/of wachtwoord is onbekend.");
+                    MessageBox.Show("Gebruikersnaam en/of wachtwoord is onbekend.", "Waarschuwing");
                 }
             }
             else
@@ -46,9 +46,24 @@ namespace Match_EventApp
 
         private void BTregister_Click(object sender, EventArgs e)
         {
-            Hide();
-            RegisterForm f1 = new RegisterForm();
-            f1.Show();
+            if (tbUsername.Text != null && tbPassword.Text != null)
+            {
+                if (dbs.register(tbUsername.Text, tbPassword.Text))
+                {
+                    Hide();
+                    RegisterForm f1 = new RegisterForm();
+                    f1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Gebruikersnaam bestaat al.", "Waarschuwing");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Geen lege invoervelden toegestaan.", "Waarschuwing");
+            }
+            
         }
     }
 }

@@ -153,9 +153,49 @@ namespace Match_EventApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ButtonFestival {
+            get {
+                object obj = ResourceManager.GetObject("ButtonFestival", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonLokaal {
+            get {
+                object obj = ResourceManager.GetObject("ButtonLokaal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonMessage {
+            get {
+                object obj = ResourceManager.GetObject("ButtonMessage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Digital__Design_128_512 {
             get {
                 object obj = ResourceManager.GetObject("Digital__Design_128-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Friend {
+            get {
+                object obj = ResourceManager.GetObject("Friend", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -10,7 +10,6 @@ namespace Match_EventApp.Classes
     {
         private static string username;
         private static int idAccount;
-        private bool loggedIn = false;
         //profiel
         //lijst vrienden
         //lijst matches

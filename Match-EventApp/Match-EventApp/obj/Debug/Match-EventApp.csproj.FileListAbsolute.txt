@@ -71,3 +71,5 @@ D:\Gitblub\PRG\1\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csp
 D:\Gitblub\PRG\1\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csproj.CopyComplete
 D:\Gitblub\PRG\1\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.exe
 D:\Gitblub\PRG\1\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.pdb
+D:\Gitblub\PRG\1\PT12\Match-EventApp\Match-EventApp\bin\Debug\ObjectListView.dll
+D:\Gitblub\PRG\1\PT12\Match-EventApp\Match-EventApp\bin\Debug\ObjectListView.xml

@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -136,6 +137,35 @@ namespace Match_EventApp.Classes
             client.Dispose();
 
             return url;
+        }
+
+        public List<Festival> GetFestivals()
+        {
+            List<Festival> lst = new List<Festival>();
+            connOpen();
+
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM " + database + ".festival;");
+            cmd.Connection = connect;
+
+            try
+            {
+
+                connOpen();
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+
+                foreach (DataRow r in dt.Rows)
+                {
+                    lst.Add(new Festival(r[1].ToString(), r[2].ToString()));
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return lst;
         }
 
     }

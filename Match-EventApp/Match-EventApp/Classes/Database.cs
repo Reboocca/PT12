@@ -156,7 +156,7 @@ namespace Match_EventApp.Classes
 
                 foreach (DataRow r in dt.Rows)
                 {
-                    lst.Add(new Festival(r[1].ToString(), r[2].ToString()));
+                    lst.Add(new Festival(r[1].ToString(), r[2].ToString(),r[0].ToString(),r[5].ToString(), r[3].ToString() ,DateTime.Parse(r[8].ToString())));
                 }
             }
             catch (Exception)
@@ -164,9 +164,105 @@ namespace Match_EventApp.Classes
 
                 throw;
             }
+            finally
+            {
+                connClose();
+            }
 
             return lst;
         }
 
+        /// <summary>
+        /// Looks if the user already has a status for that festival in the database
+        /// </summary>
+        /// <param name="f">Festival ID</param>
+        /// <param name="a">Account ID</param>
+        /// <returns>True means it exists, false means it doesn't exist yet</returns>
+        public bool checkUserFestivalStatus(string f, string a)
+        {
+            bool b = false;
+            connOpen();
+
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM " + database + ".festival_aanwezigheid WHERE idAccount = '" + a + "' AND idFestival = '" + f + "';");
+            cmd.Connection = connect;
+            MySqlDataReader check = cmd.ExecuteReader();
+
+            if (check.Read())
+            {
+                if (check.HasRows)
+                {
+                    b = true;
+                }
+
+                connClose();
+            }
+            return b;
+        }
+
+        /// <summary>
+        /// Sets the status of the User / festival table
+        /// </summary>
+        /// <param name="f">Destival ID</param>
+        /// <param name="a">Account ID</param>
+        /// <returns></returns>
+        public bool setUserFestivalStatus(string f, string a)
+        {
+            bool b = false;
+
+            connOpen();
+            MySqlCommand cmd = new MySqlCommand("UPDATE " + database + ".festival_aanwezigheid SET `status` = 1 WHERE `idAccount` = " + a + " AND `idFestival` = " + f + ";");
+            cmd.Connection = connect;
+
+            try
+            {
+                int update = cmd.ExecuteNonQuery();
+                if (update > 0)
+                {
+                    b = true;
+                }
+            }
+            catch (Exception)
+            {
+                b = false;
+            }
+            finally
+            {
+                connClose();
+            }
+            return b;
+        }
+
+        /// <summary>
+        /// Inserts new row for the User / festival table
+        /// </summary>
+        /// <param name="f">Festival ID</param>
+        /// <param name="a">Account ID</param>
+        /// <returns></returns>
+        public bool insertUserFestivalStatus(string f, string a)
+        {
+            bool b = false;
+
+            connOpen();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".festival_aanwezigheid (`idAccount`,`idFestival`, `status`) VALUES ("+ a +", "+ f +", 1);");
+            cmd.Connection = connect;
+
+            try
+            {
+                int insert = cmd.ExecuteNonQuery();
+                if (insert > 0)
+                {
+                    b = true;
+                }
+            }
+            catch (Exception)
+            {
+                b = false;
+            }
+            finally
+            {
+                connClose();
+            }
+            return b;
+        }
     }
 }

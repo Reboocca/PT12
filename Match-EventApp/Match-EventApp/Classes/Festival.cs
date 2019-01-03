@@ -10,6 +10,7 @@ namespace Match_EventApp.Classes
 {
     class Festival
     {
+        public string idFestival { get; private set; }
         public string Name { get; private set; }
         public string Desc { get; private set; }
         public string Group { get; private set; }
@@ -25,16 +26,23 @@ namespace Match_EventApp.Classes
         /// </summary>
         /// <param name="naam">Name of the festival</param>
         /// <param name="url">Url to the picture of the festival</param>
-        public Festival(string naam, string url)
+        public Festival(string naam, string url, string id, string l, string p, DateTime d)
         {
             setFoto(url);
             Name = naam;
-            Desc = "Hier komt de omschrijving van:  " + naam;
+            Desc = naam + " vind plaats in " + l + " op " + d.ToShortDateString() + " kaartjes kosten: " + p;
 
-            //Buttons
+            idFestival = id;
+
+            //Buttons for the ObjectListBox
             Group   = "G";
             Join    = "J";
             Match   = "M";
+        }
+
+        public Festival()
+        {
+            //empty constructor
         }
 
         /// <summary>

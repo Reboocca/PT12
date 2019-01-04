@@ -19,7 +19,6 @@ namespace Match_EventApp
             {
                 if (dbs.login(tbUsername.Text, tbPassword.Text))
                 {
-                    MessageBox.Show("Ingelogd -> naar home page");
                     FestivalListForm form = new FestivalListForm();
                     form.Show();
                     Hide();

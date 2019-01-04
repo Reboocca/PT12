@@ -53,7 +53,6 @@ namespace Match_EventApp
         private void LbFestivals_ButtonClick(object sender, BrightIdeasSoftware.CellClickEventArgs e)
         {
             Account a = new Account();
-            bool result = false;
             switch (e.SubItem.ToString())
             {
                 case "ListViewSubItem: {G}":
@@ -62,23 +61,22 @@ namespace Match_EventApp
                     this.Close();
                     break;
                 case "ListViewSubItem: {J}":
-                    result = a.joinFestival((Festival)e.Model);
+                    bool result = a.joinFestival((Festival)e.Model);
+                    if (result)
+                    {
+                        MessageBox.Show("Je status is gewijzigd", "Succes");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Er is iets mis gegaan bij het opslaan van je status, probeer het nog eens", "Error");
+                    }
                     break;
                 case "ListViewSubItem: {M}":
                     TinderForm t = new TinderForm();
                     t.Show();
                     this.Close();
                     break;
-            }
-
-            if (result)
-            {
-                MessageBox.Show("Je status is gewijzigd", "Succes");
-            }
-            else
-            {
-                MessageBox.Show("Er is iets mis gegaan bij het opslaan van je status, probeer het nog eens", "Error");
-            }
+            }            
         }
 
         private void fillObjListView()

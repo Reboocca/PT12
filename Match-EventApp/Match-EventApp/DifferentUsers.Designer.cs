@@ -28,31 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DifferentUsers));
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.BThome = new System.Windows.Forms.Button();
+            this.BTclose = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Match_EventApp.Properties.Resources.Digital__Design_128_512;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(282, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 26);
-            this.button1.TabIndex = 22;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -65,16 +55,6 @@
             this.label1.TabIndex = 34;
             this.label1.Text = "Select User";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(310, 26);
-            this.panel1.TabIndex = 29;
             // 
             // pictureBox4
             // 
@@ -126,6 +106,44 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // BThome
+            // 
+            this.BThome.BackColor = System.Drawing.Color.Transparent;
+            this.BThome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BThome.BackgroundImage")));
+            this.BThome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BThome.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BThome.FlatAppearance.BorderSize = 0;
+            this.BThome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BThome.Location = new System.Drawing.Point(3, 4);
+            this.BThome.Name = "BThome";
+            this.BThome.Size = new System.Drawing.Size(32, 27);
+            this.BThome.TabIndex = 15;
+            this.BThome.UseVisualStyleBackColor = false;
+            // 
+            // BTclose
+            // 
+            this.BTclose.BackColor = System.Drawing.Color.Transparent;
+            this.BTclose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTclose.BackgroundImage")));
+            this.BTclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTclose.FlatAppearance.BorderSize = 0;
+            this.BTclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTclose.Location = new System.Drawing.Point(275, 3);
+            this.BTclose.Name = "BTclose";
+            this.BTclose.Size = new System.Drawing.Size(32, 27);
+            this.BTclose.TabIndex = 14;
+            this.BTclose.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.BThome);
+            this.panel7.Controls.Add(this.BTclose);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(310, 34);
+            this.panel7.TabIndex = 35;
+            // 
             // DifferentUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -133,34 +151,34 @@
             this.BackgroundImage = global::Match_EventApp.Properties.Resources.Achtergrond7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(310, 550);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DifferentUsers";
             this.Text = "DifferentUsers";
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button BThome;
+        private System.Windows.Forms.Button BTclose;
+        private System.Windows.Forms.Panel panel7;
     }
 }

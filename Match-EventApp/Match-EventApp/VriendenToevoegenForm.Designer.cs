@@ -29,56 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VriendenToevoegenForm));
-            this.BThome = new System.Windows.Forms.Button();
-            this.BTclose = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.BTinsta = new System.Windows.Forms.Button();
             this.BTvrienden_toevoegen = new System.Windows.Forms.Button();
             this.BTfacebook = new System.Windows.Forms.Button();
             this.BTwhatsapp = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.BThome = new System.Windows.Forms.Button();
+            this.BTclose = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BThome
-            // 
-            this.BThome.BackColor = System.Drawing.Color.Transparent;
-            this.BThome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BThome.BackgroundImage")));
-            this.BThome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BThome.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BThome.FlatAppearance.BorderSize = 0;
-            this.BThome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BThome.Location = new System.Drawing.Point(3, 4);
-            this.BThome.Name = "BThome";
-            this.BThome.Size = new System.Drawing.Size(32, 27);
-            this.BThome.TabIndex = 15;
-            this.BThome.UseVisualStyleBackColor = false;
-            this.BThome.Click += new System.EventHandler(this.BThome_Click);
-            // 
-            // BTclose
-            // 
-            this.BTclose.BackColor = System.Drawing.Color.Transparent;
-            this.BTclose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTclose.BackgroundImage")));
-            this.BTclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTclose.FlatAppearance.BorderSize = 0;
-            this.BTclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTclose.Location = new System.Drawing.Point(275, 3);
-            this.BTclose.Name = "BTclose";
-            this.BTclose.Size = new System.Drawing.Size(32, 27);
-            this.BTclose.TabIndex = 14;
-            this.BTclose.UseVisualStyleBackColor = false;
-            this.BTclose.Click += new System.EventHandler(this.BTclose_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.BThome);
-            this.panel7.Controls.Add(this.BTclose);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 34);
-            this.panel7.TabIndex = 16;
             // 
             // BTinsta
             // 
@@ -148,6 +108,44 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Vrienden toevoegen:";
             // 
+            // BThome
+            // 
+            this.BThome.BackColor = System.Drawing.Color.Transparent;
+            this.BThome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BThome.BackgroundImage")));
+            this.BThome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BThome.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BThome.FlatAppearance.BorderSize = 0;
+            this.BThome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BThome.Location = new System.Drawing.Point(3, 4);
+            this.BThome.Name = "BThome";
+            this.BThome.Size = new System.Drawing.Size(32, 27);
+            this.BThome.TabIndex = 15;
+            this.BThome.UseVisualStyleBackColor = false;
+            // 
+            // BTclose
+            // 
+            this.BTclose.BackColor = System.Drawing.Color.Transparent;
+            this.BTclose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTclose.BackgroundImage")));
+            this.BTclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTclose.FlatAppearance.BorderSize = 0;
+            this.BTclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTclose.Location = new System.Drawing.Point(275, 3);
+            this.BTclose.Name = "BTclose";
+            this.BTclose.Size = new System.Drawing.Size(32, 27);
+            this.BTclose.TabIndex = 14;
+            this.BTclose.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.BThome);
+            this.panel7.Controls.Add(this.BTclose);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(310, 34);
+            this.panel7.TabIndex = 27;
+            // 
             // VriendenToevoegenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -155,12 +153,12 @@
             this.BackgroundImage = global::Match_EventApp.Properties.Resources.Achtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(310, 550);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BTwhatsapp);
             this.Controls.Add(this.BTfacebook);
             this.Controls.Add(this.BTvrienden_toevoegen);
             this.Controls.Add(this.BTinsta);
-            this.Controls.Add(this.panel7);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VriendenToevoegenForm";
@@ -172,14 +170,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BThome;
-        private System.Windows.Forms.Button BTclose;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button BTinsta;
         private System.Windows.Forms.Button BTvrienden_toevoegen;
         private System.Windows.Forms.Button BTfacebook;
         private System.Windows.Forms.Button BTwhatsapp;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BThome;
+        private System.Windows.Forms.Button BTclose;
+        private System.Windows.Forms.Panel panel7;
     }
 }

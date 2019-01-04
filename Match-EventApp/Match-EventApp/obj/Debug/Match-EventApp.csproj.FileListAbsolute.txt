@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\rickp\OneDrive - Office 365 Fontys\Proftaak 2\Proftaak periode 2\C#\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csprojAssemblyReference.cache
 C:\Users\rickp\OneDrive - Office 365 Fontys\Proftaak 2\Proftaak periode 2\C#\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csproj.GenerateResource.cache
 C:\Users\rickp\OneDrive - Office 365 Fontys\Proftaak 2\Proftaak periode 2\C#\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.InlogForm.resources

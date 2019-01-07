@@ -10,7 +10,6 @@ namespace Match_EventApp.Classes
     {
         private static string username;
         private static int idAccount;
-        private bool loggedIn = false;
         //profiel
         //lijst vrienden
         //lijst matches
@@ -32,6 +31,23 @@ namespace Match_EventApp.Classes
         {
             get { return idAccount; }
             set { idAccount = value; }
+        }
+
+        public bool joinFestival(Festival f)
+        {
+            bool b = false;
+            Database db = new Database();
+
+            if (db.checkUserFestivalStatus(f.idFestival, idAccount.ToString()))
+            {
+                b = db.setUserFestivalStatus(f.idFestival, idAccount.ToString());
+            }
+            else
+            {
+                b = db.insertUserFestivalStatus(f.idFestival, idAccount.ToString());
+            }
+
+            return b;
         }
 
         public void Register(string user, int id)

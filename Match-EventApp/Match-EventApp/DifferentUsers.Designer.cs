@@ -119,6 +119,7 @@
             this.BThome.Size = new System.Drawing.Size(32, 27);
             this.BThome.TabIndex = 15;
             this.BThome.UseVisualStyleBackColor = false;
+            this.BThome.Click += new System.EventHandler(this.BThome_Click);
             // 
             // BTclose
             // 
@@ -132,6 +133,7 @@
             this.BTclose.Size = new System.Drawing.Size(32, 27);
             this.BTclose.TabIndex = 14;
             this.BTclose.UseVisualStyleBackColor = false;
+            this.BTclose.Click += new System.EventHandler(this.BTclose_Click);
             // 
             // panel7
             // 

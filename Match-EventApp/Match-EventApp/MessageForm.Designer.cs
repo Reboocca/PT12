@@ -30,43 +30,43 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageForm));
             this.panel7 = new System.Windows.Forms.Panel();
+            this.BThome = new System.Windows.Forms.Button();
+            this.BTclose = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BThome = new System.Windows.Forms.Button();
-            this.BTclose = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -79,6 +79,36 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 34);
             this.panel7.TabIndex = 38;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // BThome
+            // 
+            this.BThome.BackColor = System.Drawing.Color.Transparent;
+            this.BThome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BThome.BackgroundImage")));
+            this.BThome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BThome.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BThome.FlatAppearance.BorderSize = 0;
+            this.BThome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BThome.Location = new System.Drawing.Point(3, 4);
+            this.BThome.Name = "BThome";
+            this.BThome.Size = new System.Drawing.Size(32, 27);
+            this.BThome.TabIndex = 15;
+            this.BThome.UseVisualStyleBackColor = false;
+            this.BThome.Click += new System.EventHandler(this.BThome_Click);
+            // 
+            // BTclose
+            // 
+            this.BTclose.BackColor = System.Drawing.Color.Transparent;
+            this.BTclose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTclose.BackgroundImage")));
+            this.BTclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTclose.FlatAppearance.BorderSize = 0;
+            this.BTclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTclose.Location = new System.Drawing.Point(275, 3);
+            this.BTclose.Name = "BTclose";
+            this.BTclose.Size = new System.Drawing.Size(32, 27);
+            this.BTclose.TabIndex = 14;
+            this.BTclose.UseVisualStyleBackColor = false;
+            this.BTclose.Click += new System.EventHandler(this.BTclose_Click);
             // 
             // richTextBox1
             // 
@@ -110,6 +140,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(6, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
             // richTextBox3
             // 
             this.richTextBox3.Location = new System.Drawing.Point(103, 52);
@@ -139,6 +177,14 @@
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(6, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
             // 
             // richTextBox2
             // 
@@ -201,6 +247,14 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "label4";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(6, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox5.TabIndex = 14;
+            this.pictureBox5.TabStop = false;
+            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.SkyBlue;
@@ -231,6 +285,14 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "label5";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(6, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
             // vScrollBar1
             // 
             this.vScrollBar1.Location = new System.Drawing.Point(310, 8);
@@ -260,49 +322,6 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "label2";
             // 
-            // BThome
-            // 
-            this.BThome.BackColor = System.Drawing.Color.Transparent;
-            this.BThome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BThome.BackgroundImage")));
-            this.BThome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BThome.Cursor = System.Windows.Forms.Cursors.Default;
-            this.BThome.FlatAppearance.BorderSize = 0;
-            this.BThome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BThome.Location = new System.Drawing.Point(3, 4);
-            this.BThome.Name = "BThome";
-            this.BThome.Size = new System.Drawing.Size(32, 27);
-            this.BThome.TabIndex = 15;
-            this.BThome.UseVisualStyleBackColor = false;
-            // 
-            // BTclose
-            // 
-            this.BTclose.BackColor = System.Drawing.Color.Transparent;
-            this.BTclose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTclose.BackgroundImage")));
-            this.BTclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTclose.FlatAppearance.BorderSize = 0;
-            this.BTclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTclose.Location = new System.Drawing.Point(275, 3);
-            this.BTclose.Name = "BTclose";
-            this.BTclose.Size = new System.Drawing.Size(32, 27);
-            this.BTclose.TabIndex = 14;
-            this.BTclose.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(6, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(6, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(6, 4);
@@ -310,22 +329,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(90, 90);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(6, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
             // 
             // MessageForm
             // 
@@ -343,20 +346,20 @@
             this.panel7.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

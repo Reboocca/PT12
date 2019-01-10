@@ -26,7 +26,7 @@ namespace Match_EventApp
         private void BThome_Click(object sender, EventArgs e)
         {
             Close();
-            InlogForm f2 = new InlogForm();
+            FestivalListForm f2 = new FestivalListForm();
             f2.Show();
         }
 

@@ -31,5 +31,17 @@ namespace Match_EventApp
         {
 
         }
+
+        private void BTclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BThome_Click(object sender, EventArgs e)
+        {
+            Close();
+            FestivalListForm f2 = new FestivalListForm();
+            f2.Show();
+        }
     }
 }

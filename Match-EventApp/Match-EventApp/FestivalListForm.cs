@@ -83,6 +83,18 @@ namespace Match_EventApp
         {
             lbFestivals.SetObjects(dbs.GetFestivals());
         }
+
+        private void BTclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BThome_Click(object sender, EventArgs e)
+        {
+            Close();
+            InlogForm f2 = new InlogForm();
+            f2.Show();
+        }
     }
 }
 

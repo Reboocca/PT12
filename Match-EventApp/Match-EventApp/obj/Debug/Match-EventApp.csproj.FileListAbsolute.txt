@@ -39,3 +39,4 @@ C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debu
 C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.exe
 C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.pdb
 C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.GroepAanmaken.resources
+C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageScreenForm.resources

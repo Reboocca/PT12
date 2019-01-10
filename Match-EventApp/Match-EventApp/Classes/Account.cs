@@ -11,13 +11,13 @@ namespace Match_EventApp.Classes
         private static string username;
         private static int idAccount;
         private bool loggedIn = false;
-        //profiel
+        Profiel profiel = new Profiel();
         //lijst vrienden
         //lijst matches
 
         public Account()
         {
-            //maak nieuw profiel
+            profiel._profielID = idAccount;
             //maak lijst vrienden
             //maak lijst matches
         }

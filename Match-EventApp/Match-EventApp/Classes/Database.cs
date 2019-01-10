@@ -264,5 +264,26 @@ namespace Match_EventApp.Classes
             }
             return b;
         }
+
+        public Profiel getProfiel()
+        {
+            string query = ""; //voeg query toe in elke command
+            Profiel p = new Profiel();
+            connOpen();
+
+            MySqlCommand cmd = new MySqlCommand(query, connect);
+            p._voornaam="";
+            p._achternaam ="";
+            p._geslacht = 0;
+            
+            string voornaam;
+            string achternaam;
+            int geslacht;
+            int leeftijd;
+            string favoFest;
+            string favoGenre;
+            string hobbys;
+            return p;
+        }
     }
 }

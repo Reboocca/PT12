@@ -145,6 +145,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(310, 34);
             this.panel7.TabIndex = 35;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // DifferentUsers
             // 

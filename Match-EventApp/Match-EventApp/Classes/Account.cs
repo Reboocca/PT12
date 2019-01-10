@@ -34,6 +34,23 @@ namespace Match_EventApp.Classes
             set { idAccount = value; }
         }
 
+        public bool joinFestival(Festival f)
+        {
+            bool b = false;
+            Database db = new Database();
+
+            if (db.checkUserFestivalStatus(f.idFestival, idAccount.ToString()))
+            {
+                b = db.setUserFestivalStatus(f.idFestival, idAccount.ToString());
+            }
+            else
+            {
+                b = db.insertUserFestivalStatus(f.idFestival, idAccount.ToString());
+            }
+
+            return b;
+        }
+
         public void Register(string user, int id)
         {
             _username = user;

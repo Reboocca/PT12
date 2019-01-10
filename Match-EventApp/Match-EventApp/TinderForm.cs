@@ -16,5 +16,30 @@ namespace Match_EventApp
         {
             InitializeComponent();
         }
+
+        public void Like()
+        {
+
+        }
+
+        public void Dislike()
+        {
+
+        }
+
+        public void Superlike()
+        {
+
+        }
+
+        public void Showprofileimg()
+        {
+
+        }
+
+        public void Selectprofile()
+        {
+
+        }
     }
 }

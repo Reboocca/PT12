@@ -17,7 +17,7 @@ namespace EventMatch
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InlogForm());
+            Application.Run(new GroepAanmaken());
         }
     }
 }

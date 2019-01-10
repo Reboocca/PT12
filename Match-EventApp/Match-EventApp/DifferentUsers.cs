@@ -43,5 +43,10 @@ namespace Match_EventApp
             FestivalListForm f2 = new FestivalListForm();
             f2.Show();
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

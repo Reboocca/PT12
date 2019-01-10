@@ -71,6 +71,12 @@
     <Compile Include="FestivalListForm.Designer.cs">
       <DependentUpon>FestivalListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GroepAanmaken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroepAanmaken.Designer.cs">
+      <DependentUpon>GroepAanmaken.cs</DependentUpon>
+    </Compile>
     <Compile Include="Group.cs" />
     <Compile Include="GroupSelect.cs">
       <SubType>Form</SubType>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FestivalListForm.resx">
       <DependentUpon>FestivalListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroepAanmaken.resx">
+      <DependentUpon>GroepAanmaken.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GroupSelect.resx">
       <DependentUpon>GroupSelect.cs</DependentUpon>

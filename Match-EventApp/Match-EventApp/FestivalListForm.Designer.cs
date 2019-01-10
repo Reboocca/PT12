@@ -115,7 +115,7 @@
             this.btnMatch});
             this.lbFestivals.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbFestivals.Location = new System.Drawing.Point(0, 107);
-            this.lbFestivals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbFestivals.Margin = new System.Windows.Forms.Padding(4);
             this.lbFestivals.Name = "lbFestivals";
             this.lbFestivals.ShowGroups = false;
             this.lbFestivals.ShowHeaderInAllViews = false;
@@ -214,7 +214,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FestivalListForm";
-            this.Text = "FestivalForm";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.lbFestivals)).EndInit();
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);

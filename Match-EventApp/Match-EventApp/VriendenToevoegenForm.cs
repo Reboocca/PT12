@@ -19,7 +19,7 @@ namespace Match_EventApp
 
         private void BTvrienden_toevoegen_Click(object sender, EventArgs e)
         {
-
+            //Damians form
         }
 
         private void BTclose_Click_1(object sender, EventArgs e)

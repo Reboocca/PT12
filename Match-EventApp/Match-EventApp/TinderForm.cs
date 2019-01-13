@@ -63,9 +63,11 @@ namespace Match_EventApp
             Hide();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void BTmatches_Click(object sender, EventArgs e)
         {
-
+            MessageForm messagefrom = new MessageForm();
+            messagefrom.Show();
+            Close();
         }
     }
 }

@@ -22,13 +22,6 @@ namespace Match_EventApp
             fillObjListView();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            InlogForm log = new InlogForm();
-            log.Show();
-            this.Close();
-        }
-
         //Set the properties of the items in the object list box
         private void propObjListView()
         {
@@ -56,7 +49,7 @@ namespace Match_EventApp
             switch (e.SubItem.ToString())
             {
                 case "ListViewSubItem: {G}":
-                    GroupSelect g = new GroupSelect();
+                    MessageScreenForm g = new MessageScreenForm();
                     g.Show();
                     this.Close();
                     break;
@@ -110,7 +103,7 @@ namespace Match_EventApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageForm messageForm = new MessageForm();
+            MessageScreenForm messageForm = new MessageScreenForm();
             messageForm.Show();
             this.Close();
         }

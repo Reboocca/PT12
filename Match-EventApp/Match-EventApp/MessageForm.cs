@@ -29,9 +29,44 @@ namespace Match_EventApp
 
         private void BThome_Click(object sender, EventArgs e)
         {
-            Close();
             FestivalListForm f2 = new FestivalListForm();
             f2.Show();
+            Close();
+        }
+
+        private void BTnaam1_Click(object sender, EventArgs e)
+        {
+            MessageScreenForm f3 = new MessageScreenForm();
+            f3.Show();
+            Close();
+        }
+
+        private void BTnaam2_Click(object sender, EventArgs e)
+        {
+            MessageScreenForm f3 = new MessageScreenForm();
+            f3.Show();
+            Close();
+        }
+
+        private void BTnaam3_Click(object sender, EventArgs e)
+        {
+            MessageScreenForm f3 = new MessageScreenForm();
+            f3.Show();
+            Close();
+        }
+
+        private void BTnaam4_Click(object sender, EventArgs e)
+        {
+            MessageScreenForm f3 = new MessageScreenForm();
+            f3.Show();
+            Close();
+        }
+
+        private void BTnaam5_Click(object sender, EventArgs e)
+        {
+            MessageScreenForm f3 = new MessageScreenForm();
+            f3.Show();
+            Close();
         }
     }
 }

@@ -51,6 +51,10 @@ namespace Match_EventApp
                 {
                     MessageBox.Show("Saved");
                     BTregister.Enabled = false;
+
+                    InlogForm login = new InlogForm();
+                    login.Show();
+                    Close();
                 }
                 else
                 {

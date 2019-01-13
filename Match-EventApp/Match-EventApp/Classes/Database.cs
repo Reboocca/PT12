@@ -267,7 +267,7 @@ namespace Match_EventApp.Classes
 
         public List<Profiel> getProfiel()
         {
-            string query = "SELECT * FROM" + database + ".profiel"; //voeg query toe in elke command
+            string query = "SELECT * FROM" + database + ".profiel";
             List<Profiel> profielen = new List<Profiel>();
             connOpen();
 
@@ -276,12 +276,56 @@ namespace Match_EventApp.Classes
 
             if (read.Read())
             {
-                Profiel p = new Profiel(read.GetInt32(0),read.GetString(1),read.GetString(2),read.GetInt32(4),
-                    read.GetInt32(3),read.GetString(7),read.GetString(8), read.GetString(5), read.GetString(6));
-                profielen.Add(p);
+                profielen.Add(new Profiel(read.GetInt32(0), read.GetString(1), read.GetString(2), read.GetInt32(4),
+                    read.GetInt32(3), read.GetString(7), read.GetString(8), read.GetString(5), read.GetString(6)));
             }
+            connClose();
 
             return profielen;
+        }
+
+        public bool insertlike(int idaccount1,int idaccount2)
+        {
+            bool succes = false;
+            connOpen();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".matches (`idAccount1`,`idAccount2`,`status`) VALUES(" + idaccount1 + ", " + idaccount2 + ", 1);");
+            cmd.Connection = connect;
+
+            try
+            {
+                int insert = cmd.ExecuteNonQuery();
+                if (insert > 0)
+                {
+                    succes= true;
+                }
+            }
+            catch (Exception)
+            {
+                succes= false;
+            }
+            return succes;
+        }
+
+        public bool insertdislike(int idaccount1,int idaccount2)
+        {
+            bool succes = false;
+            connOpen();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".matches (`idAccount1`,`idAccount2`,`status`) VALUES(" + idaccount1 + ", " + idaccount2 + ", 2);");
+            cmd.Connection = connect;
+
+            try
+            {
+                int insert = cmd.ExecuteNonQuery();
+                if (insert > 0)
+                {
+                    succes = true;
+                }
+            }
+            catch (Exception)
+            {
+                succes = false;
+            }
+            return succes;
         }
     }
 }

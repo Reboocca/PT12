@@ -42,3 +42,17 @@ C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debu
 C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageScreenForm.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.GroepAanmaken.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageScreenForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csprojAssemblyReference.cache
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.FestivalListForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.GroupSelect.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageScreenForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.TinderForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.VriendenToevoegenForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.InlogForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.Properties.Resources.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.RegisterForm.resources
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csproj.GenerateResource.cache
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csproj.CoreCompileInputs.cache
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.exe
+C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.pdb

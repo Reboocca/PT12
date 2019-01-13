@@ -17,16 +17,21 @@ namespace Match_EventApp
             InitializeComponent();
         }
 
-        private void BThome_Click(object sender, EventArgs e)
+        private void BTvrienden_toevoegen_Click(object sender, EventArgs e)
         {
-            Close();
-            InlogForm f2 = new InlogForm();
-            f2.Show();
+
         }
 
-        private void BTclose_Click(object sender, EventArgs e)
+        private void BTclose_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BThome_Click_1(object sender, EventArgs e)
+        {
+            InlogForm f2 = new InlogForm();
+            f2.Show();
+            Close();
         }
     }
 }

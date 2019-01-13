@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Match_EventApp.Classes
 {
@@ -16,10 +17,26 @@ namespace Match_EventApp.Classes
         private string favofestival;
         private string favofilms;
         private string hobbys;
+        private string url;
+        private Bitmap Foto;
 
         public Profiel()
         {
 
+        }
+
+        public Profiel(int id, string voornaam,string achternaam, int geslacht, int leeftijd,
+            string festival, string films, string hobby, string url)
+        {
+            id = this.profielID;
+            voornaam = this.voornaam;
+            achternaam = this.achternaam;
+            geslacht = this.geslacht;
+            leeftijd = this.leeftijd;
+            festival = this.favofestival;
+            films = this.favofilms;
+            hobby = this.hobbys;
+            url = this.url;
         }
 
         public int _profielID
@@ -64,13 +81,26 @@ namespace Match_EventApp.Classes
             set { favofilms = value;}
         }
 
-        private string _hobbys
+        public string _hobbys
         {
             get { return hobbys; }
             set { hobbys = value;}
         }
 
+        public string _url
+        {
+            get { return url; }
+            set { _url = value; }
+        }
 
+        private void setFoto(string url)
+        {
+            System.Net.WebRequest request = System.Net.WebRequest.Create(url);
+            System.Net.WebResponse resp = request.GetResponse();
+            System.IO.Stream respStream = resp.GetResponseStream();
+            Bitmap bmp = new Bitmap(respStream);
+            respStream.Dispose();
+        }
     }
 
 }

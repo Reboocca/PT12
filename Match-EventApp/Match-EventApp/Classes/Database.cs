@@ -265,25 +265,23 @@ namespace Match_EventApp.Classes
             return b;
         }
 
-        public Profiel getProfiel()
+        public List<Profiel> getProfiel()
         {
-            string query = ""; //voeg query toe in elke command
-            Profiel p = new Profiel();
+            string query = "SELECT * FROM" + database + ".profiel"; //voeg query toe in elke command
+            List<Profiel> profielen = new List<Profiel>();
             connOpen();
 
             MySqlCommand cmd = new MySqlCommand(query, connect);
-            p._voornaam="";
-            p._achternaam ="";
-            p._geslacht = 0;
-            
-            string voornaam;
-            string achternaam;
-            int geslacht;
-            int leeftijd;
-            string favoFest;
-            string favoGenre;
-            string hobbys;
-            return p;
+            MySqlDataReader read = cmd.ExecuteReader();
+
+            if (read.Read())
+            {
+                Profiel p = new Profiel(read.GetInt32(0),read.GetString(1),read.GetString(2),read.GetInt32(4),
+                    read.GetInt32(3),read.GetString(7),read.GetString(8), read.GetString(5), read.GetString(6));
+                profielen.Add(p);
+            }
+
+            return profielen;
         }
     }
 }

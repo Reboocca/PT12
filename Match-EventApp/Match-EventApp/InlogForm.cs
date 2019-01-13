@@ -41,7 +41,7 @@ namespace Match_EventApp
 
         private void BTregister_Click(object sender, EventArgs e)
         {
-            if (tbUsername.Text != null && tbPassword.Text != null)
+            if (string.IsNullOrEmpty(tbUsername.Text) && string.IsNullOrEmpty(tbPassword.Text))
             {
                 if (dbs.register(tbUsername.Text, tbPassword.Text))
                 {

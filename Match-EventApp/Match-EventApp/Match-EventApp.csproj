@@ -33,11 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ListViewPrinter, Version=2.7.1.31255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\ListViewPrinter.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\..\..\Office 365 Fontys\Peters,Rick R. - Proftaak 2\Proftaak periode 2\Overig\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
-      <HintPath>..\packages\ObjectListView.Official.2.9.1\lib\net20\ObjectListView.dll</HintPath>
+    <Reference Include="ObjectListView, Version=2.7.1.31255, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="SparkleLibrary, Version=2.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\SparkleLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

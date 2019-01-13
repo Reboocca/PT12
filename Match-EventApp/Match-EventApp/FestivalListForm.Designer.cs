@@ -52,12 +52,13 @@
             this.button5.BackgroundImage = global::Match_EventApp.Properties.Resources.ButtonFestival;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(5, 32);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(4, 26);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(69, 69);
+            this.button5.Size = new System.Drawing.Size(52, 56);
             this.button5.TabIndex = 37;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -65,12 +66,13 @@
             this.button4.BackgroundImage = global::Match_EventApp.Properties.Resources.ButtonLokaal;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(80, 32);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(60, 26);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(71, 69);
+            this.button4.Size = new System.Drawing.Size(53, 56);
             this.button4.TabIndex = 36;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -78,12 +80,13 @@
             this.button3.BackgroundImage = global::Match_EventApp.Properties.Resources.ButtonMessage;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(157, 32);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(118, 26);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(72, 69);
+            this.button3.Size = new System.Drawing.Size(54, 56);
             this.button3.TabIndex = 35;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -91,12 +94,13 @@
             this.button2.BackgroundImage = global::Match_EventApp.Properties.Resources.Friend;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(235, 32);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(176, 26);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 69);
+            this.button2.Size = new System.Drawing.Size(52, 56);
             this.button2.TabIndex = 34;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lbFestivals
             // 
@@ -114,12 +118,11 @@
             this.btnJoin,
             this.btnMatch});
             this.lbFestivals.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbFestivals.Location = new System.Drawing.Point(0, 107);
-            this.lbFestivals.Margin = new System.Windows.Forms.Padding(4);
+            this.lbFestivals.Location = new System.Drawing.Point(0, 87);
             this.lbFestivals.Name = "lbFestivals";
             this.lbFestivals.ShowGroups = false;
             this.lbFestivals.ShowHeaderInAllViews = false;
-            this.lbFestivals.Size = new System.Drawing.Size(309, 443);
+            this.lbFestivals.Size = new System.Drawing.Size(233, 361);
             this.lbFestivals.TabIndex = 1;
             this.lbFestivals.UseCompatibleStateImageBehavior = false;
             this.lbFestivals.View = System.Windows.Forms.View.Details;
@@ -165,9 +168,10 @@
             this.BThome.Cursor = System.Windows.Forms.Cursors.Default;
             this.BThome.FlatAppearance.BorderSize = 0;
             this.BThome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BThome.Location = new System.Drawing.Point(3, 4);
+            this.BThome.Location = new System.Drawing.Point(2, 3);
+            this.BThome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BThome.Name = "BThome";
-            this.BThome.Size = new System.Drawing.Size(32, 27);
+            this.BThome.Size = new System.Drawing.Size(24, 22);
             this.BThome.TabIndex = 15;
             this.BThome.UseVisualStyleBackColor = false;
             this.BThome.Click += new System.EventHandler(this.BThome_Click);
@@ -179,9 +183,10 @@
             this.BTclose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTclose.FlatAppearance.BorderSize = 0;
             this.BTclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTclose.Location = new System.Drawing.Point(275, 3);
+            this.BTclose.Location = new System.Drawing.Point(206, 2);
+            this.BTclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BTclose.Name = "BTclose";
-            this.BTclose.Size = new System.Drawing.Size(32, 27);
+            this.BTclose.Size = new System.Drawing.Size(24, 22);
             this.BTclose.TabIndex = 14;
             this.BTclose.UseVisualStyleBackColor = false;
             this.BTclose.Click += new System.EventHandler(this.BTclose_Click);
@@ -193,17 +198,18 @@
             this.panel7.Controls.Add(this.BTclose);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(309, 34);
+            this.panel7.Size = new System.Drawing.Size(232, 28);
             this.panel7.TabIndex = 39;
             // 
             // FestivalListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Match_EventApp.Properties.Resources.Achtergrond6;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(309, 550);
+            this.ClientSize = new System.Drawing.Size(232, 447);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.lbFestivals);
             this.Controls.Add(this.button5);
@@ -212,7 +218,7 @@
             this.Controls.Add(this.button2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FestivalListForm";
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.lbFestivals)).EndInit();

@@ -95,6 +95,32 @@ namespace Match_EventApp
             InlogForm f2 = new InlogForm();
             f2.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FestivalListForm festival = new FestivalListForm();
+            festival.Show();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Lokaal form
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageForm messageForm = new MessageForm();
+            messageForm.Show();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            VriendenToevoegenForm vriendenToevoegenForm = new VriendenToevoegenForm();
+            vriendenToevoegenForm.Show();
+            this.Close();
+        }
     }
 }
 

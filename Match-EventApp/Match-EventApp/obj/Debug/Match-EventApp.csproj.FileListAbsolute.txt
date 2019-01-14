@@ -4,7 +4,6 @@ D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\bin\Debug\Match-Ev
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\bin\Debug\ObjectListView.dll
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\bin\Debug\ObjectListView.xml
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csprojAssemblyReference.cache
-D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.DifferentUsers.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.FestivalListForm.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.GroupSelect.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageForm.resources
@@ -40,7 +39,6 @@ C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debu
 C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.pdb
 C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.GroepAanmaken.resources
 C:\Users\rickp\Source\Repos\Reboocca\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageScreenForm.resources
-D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.GroepAanmaken.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageScreenForm.resources
 C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csprojAssemblyReference.cache
 C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.FestivalListForm.resources

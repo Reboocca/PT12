@@ -17,6 +17,7 @@ namespace Match_EventApp
         private Random rnd = new Random();
         private Database dbs = new Database();
         private Account acc = new Account();
+        List<Profiel> profielen = new List<Profiel>();
         public TinderForm()
         {
             InitializeComponent();
@@ -35,14 +36,21 @@ namespace Match_EventApp
 
         public int Showprofile()
         {
-            int rndint = rnd.Next(0, 6);
-            Profiel profiel = new Profiel();
-            profiel = dbs.getProfiel()[rndint];
+            lbl_favofest.Text = "Favoriete festival: ";
+            lbl_filmgenre.Text = "Favoriete filmgenre: ";
+            lbl_hobbys.Text = "Hobby's: ";
+            profielen = dbs.getProfiel();
 
-            lbl_naam.Text = profiel._voornaam + profiel._achternaam;
+            int rndint = rnd.Next(0, profielen.Count - 1);
+            Profiel profiel = new Profiel();
+            profiel = profielen[rndint];
+
+            lbl_naam.Text = profiel._voornaam + " " + profiel._achternaam;
             lbl_favofest.Text += profiel._favofestival;
             lbl_filmgenre.Text += profiel._favofilms;
             lbl_hobbys.Text += profiel._hobbys;
+
+            pbFoto.Image = profiel._foto;
 
             return rndint;
 
@@ -68,6 +76,13 @@ namespace Match_EventApp
             MessageForm messagefrom = new MessageForm();
             messagefrom.Show();
             Close();
+        }
+
+        private void BThome_Click(object sender, EventArgs e)
+        {
+            FestivalListForm festival = new FestivalListForm();
+            festival.Show();
+            this.Close();
         }
     }
 }

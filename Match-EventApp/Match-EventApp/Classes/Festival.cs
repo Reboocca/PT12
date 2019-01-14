@@ -13,13 +13,12 @@ namespace Match_EventApp.Classes
         public string idFestival { get; private set; }
         public string Name { get; private set; }
         public string Desc { get; private set; }
-        public string Group { get; private set; }
         public string Join { get; private set; }
         public string Match { get; private set; }
         public Bitmap Foto { get; private set; }
 
-        private float width = 40;
-        private float height = 40;
+        private float width = 60;
+        private float height = 60;
 
         /// <summary>
         /// Make a new festival
@@ -35,7 +34,6 @@ namespace Match_EventApp.Classes
             idFestival = id;
 
             //Buttons for the ObjectListBox
-            Group   = "G";
             Join    = "J";
             Match   = "M";
         }

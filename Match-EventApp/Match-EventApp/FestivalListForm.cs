@@ -25,20 +25,18 @@ namespace Match_EventApp
         //Set the properties of the items in the object list box
         private void propObjListView()
         {
-            lbFestivals.Font = new Font("Microsoft Sans Serif", 8);
-            DescribedTaskRenderer task = new DescribedTaskRenderer();
-            Naam.Renderer = task.CreateDescribedTaskRenderer();
-            lbFestivals.RowHeight = 100;
-            lbFestivals.HeaderStyle = ColumnHeaderStyle.None;
-            Foto.CellVerticalAlignment = StringAlignment.Near;
-
-            btnGroup.IsButton = true;
-            btnJoin.IsButton = true;
-            btnMatch.IsButton = true;
-
-            btnGroup.CellVerticalAlignment = StringAlignment.Near;
-            btnJoin.CellVerticalAlignment = StringAlignment.Near;
-            btnMatch.CellVerticalAlignment = StringAlignment.Near;
+            lbFestivals.Font            = new Font("Microsoft Sans Serif", 8);
+            DescribedTaskRenderer task  = new DescribedTaskRenderer();
+            Naam.Renderer               = task.CreateDescribedTaskRenderer();
+            lbFestivals.RowHeight       = 100;
+            lbFestivals.HeaderStyle     = ColumnHeaderStyle.None;
+            Foto.CellVerticalAlignment  = StringAlignment.Near;
+            
+            btnJoin.IsButton    = true;
+            btnMatch.IsButton   = true;
+            
+            btnJoin.CellVerticalAlignment   = StringAlignment.Near;
+            btnMatch.CellVerticalAlignment  = StringAlignment.Near;
 
             lbFestivals.ButtonClick += LbFestivals_ButtonClick;
         }
@@ -48,16 +46,14 @@ namespace Match_EventApp
             Account a = new Account();
             switch (e.SubItem.ToString())
             {
-                case "ListViewSubItem: {G}":
-                    MessageScreenForm g = new MessageScreenForm();
-                    g.Show();
-                    this.Close();
-                    break;
                 case "ListViewSubItem: {J}":
                     bool result = a.joinFestival((Festival)e.Model);
                     if (result)
                     {
                         MessageBox.Show("Je status is gewijzigd", "Succes");
+                        MessageScreenForm g = new MessageScreenForm();
+                        g.Show();
+                        this.Close();
                     }
                     else
                     {
@@ -94,11 +90,6 @@ namespace Match_EventApp
             FestivalListForm festival = new FestivalListForm();
             festival.Show();
             this.Close();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //Lokaal form
         }
 
         private void button3_Click(object sender, EventArgs e)

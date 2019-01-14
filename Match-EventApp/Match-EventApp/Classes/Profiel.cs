@@ -28,15 +28,16 @@ namespace Match_EventApp.Classes
         public Profiel(int id, string voornaam,string achternaam, int geslacht, int leeftijd,
             string festival, string films, string hobby, string url)
         {
-            id = this.profielID;
-            voornaam = this.voornaam;
-            achternaam = this.achternaam;
-            geslacht = this.geslacht;
-            leeftijd = this.leeftijd;
-            festival = this.favofestival;
-            films = this.favofilms;
-            hobby = this.hobbys;
-            url = this.url;
+            this.profielID      = id;
+            this.voornaam       = voornaam;
+            this.achternaam     = achternaam;
+            this.geslacht       = geslacht;
+            this.leeftijd       = leeftijd;
+            this.favofestival   = festival;
+            this.favofilms      = films;
+            this.hobbys         = hobby;
+
+            setFoto(url);
         }
 
         public int _profielID
@@ -93,6 +94,11 @@ namespace Match_EventApp.Classes
             set { _url = value; }
         }
 
+        public Bitmap _foto
+        {
+            get { return Foto; }
+        }
+
         private void setFoto(string url)
         {
             System.Net.WebRequest request = System.Net.WebRequest.Create(url);
@@ -100,6 +106,8 @@ namespace Match_EventApp.Classes
             System.IO.Stream respStream = resp.GetResponseStream();
             Bitmap bmp = new Bitmap(respStream);
             respStream.Dispose();
+
+            Foto = bmp;
         }
     }
 

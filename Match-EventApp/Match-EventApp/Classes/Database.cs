@@ -267,20 +267,22 @@ namespace Match_EventApp.Classes
 
         public List<Profiel> getProfiel()
         {
-            string query = "SELECT * FROM" + database + ".profiel";
+            string query = "SELECT * FROM " + database + ".profiel";
             List<Profiel> profielen = new List<Profiel>();
             connOpen();
 
             MySqlCommand cmd = new MySqlCommand(query, connect);
-            MySqlDataReader read = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());
 
-            if (read.Read())
+            foreach(DataRow result in dt.Rows)
             {
-                profielen.Add(new Profiel(read.GetInt32(0), read.GetString(1), read.GetString(2), read.GetInt32(4),
-                    read.GetInt32(3), read.GetString(7), read.GetString(8), read.GetString(5), read.GetString(6)));
+                profielen.Add(new Profiel(Int32.Parse(result[0].ToString()), result[1].ToString(), result[2].ToString(),
+                   Int32.Parse(result[4].ToString()), Int32.Parse(result[3].ToString()), result[7].ToString(),
+                   result[8].ToString(), result[5].ToString(), result[6].ToString()));
             }
+            
             connClose();
-
             return profielen;
         }
 

@@ -36,7 +36,6 @@
             this.lbFestivals = new BrightIdeasSoftware.ObjectListView();
             this.Foto = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.Naam = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.btnGroup = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.btnJoin = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.btnMatch = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.BThome = new System.Windows.Forms.Button();
@@ -53,7 +52,7 @@
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(4, 26);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(52, 56);
             this.button5.TabIndex = 37;
@@ -67,12 +66,11 @@
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(60, 26);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(53, 56);
             this.button4.TabIndex = 36;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -81,7 +79,7 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(118, 26);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(54, 56);
             this.button3.TabIndex = 35;
@@ -95,7 +93,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(176, 26);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(52, 56);
             this.button2.TabIndex = 34;
@@ -106,7 +104,6 @@
             // 
             this.lbFestivals.AllColumns.Add(this.Foto);
             this.lbFestivals.AllColumns.Add(this.Naam);
-            this.lbFestivals.AllColumns.Add(this.btnGroup);
             this.lbFestivals.AllColumns.Add(this.btnJoin);
             this.lbFestivals.AllColumns.Add(this.btnMatch);
             this.lbFestivals.BackColor = System.Drawing.Color.SkyBlue;
@@ -114,7 +111,6 @@
             this.lbFestivals.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Foto,
             this.Naam,
-            this.btnGroup,
             this.btnJoin,
             this.btnMatch});
             this.lbFestivals.Cursor = System.Windows.Forms.Cursors.Default;
@@ -133,7 +129,6 @@
             this.Foto.IsEditable = false;
             this.Foto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Foto.UseFiltering = false;
-            this.Foto.Width = 40;
             this.Foto.WordWrap = true;
             // 
             // Naam
@@ -141,12 +136,6 @@
             this.Naam.AspectName = "Name";
             this.Naam.Width = 80;
             this.Naam.WordWrap = true;
-            // 
-            // btnGroup
-            // 
-            this.btnGroup.AspectName = "Group";
-            this.btnGroup.AspectToStringFormat = "G";
-            this.btnGroup.Width = 30;
             // 
             // btnJoin
             // 
@@ -169,7 +158,7 @@
             this.BThome.FlatAppearance.BorderSize = 0;
             this.BThome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BThome.Location = new System.Drawing.Point(2, 3);
-            this.BThome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BThome.Margin = new System.Windows.Forms.Padding(2);
             this.BThome.Name = "BThome";
             this.BThome.Size = new System.Drawing.Size(24, 22);
             this.BThome.TabIndex = 15;
@@ -184,7 +173,7 @@
             this.BTclose.FlatAppearance.BorderSize = 0;
             this.BTclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTclose.Location = new System.Drawing.Point(206, 2);
-            this.BTclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTclose.Margin = new System.Windows.Forms.Padding(2);
             this.BTclose.Name = "BTclose";
             this.BTclose.Size = new System.Drawing.Size(24, 22);
             this.BTclose.TabIndex = 14;
@@ -198,7 +187,7 @@
             this.panel7.Controls.Add(this.BTclose);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(232, 28);
             this.panel7.TabIndex = 39;
@@ -218,7 +207,7 @@
             this.Controls.Add(this.button2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FestivalListForm";
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.lbFestivals)).EndInit();
@@ -235,7 +224,6 @@
         private BrightIdeasSoftware.ObjectListView lbFestivals;
         private BrightIdeasSoftware.OLVColumn Foto;
         private BrightIdeasSoftware.OLVColumn Naam;
-        private BrightIdeasSoftware.OLVColumn btnGroup;
         private BrightIdeasSoftware.OLVColumn btnJoin;
         private BrightIdeasSoftware.OLVColumn btnMatch;
         private System.Windows.Forms.Button BThome;

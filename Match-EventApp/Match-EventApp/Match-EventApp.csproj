@@ -90,6 +90,12 @@
     <Compile Include="TinderForm.Designer.cs">
       <DependentUpon>TinderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vrienden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vrienden.Designer.cs">
+      <DependentUpon>Vrienden.cs</DependentUpon>
+    </Compile>
     <Compile Include="VriendenToevoegenForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TinderForm.resx">
       <DependentUpon>TinderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vrienden.resx">
+      <DependentUpon>Vrienden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VriendenToevoegenForm.resx">
       <DependentUpon>VriendenToevoegenForm.cs</DependentUpon>
@@ -199,6 +208,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ButtonUser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ButtonKrijsje.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

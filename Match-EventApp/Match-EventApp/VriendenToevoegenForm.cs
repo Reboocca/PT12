@@ -7,24 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Match_EventApp.Classes;
 
 namespace Match_EventApp
 {
     public partial class VriendenToevoegenForm : Form
     {
-        public VriendenToevoegenForm()
+        Account acc = new Account();
+        Database db = new Database();
+
+        int idAcc1;
+
+        private void VriendenToevoegenForm_Load()
         {
-            InitializeComponent();
+            //id ophalen van de huidige gebruiker
+            idAcc1 = acc._idAccount;
         }
 
         private void BTvrienden_toevoegen_Click(object sender, EventArgs e)
         {
-            //Damians form
-        }
-
-        private void BTclose_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
+            db.addFriend(idAcc1.ToString());
         }
 
         private void BThome_Click_1(object sender, EventArgs e)

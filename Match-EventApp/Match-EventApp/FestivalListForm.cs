@@ -101,7 +101,7 @@ namespace Match_EventApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            VriendenToevoegenForm vriendenToevoegenForm = new VriendenToevoegenForm();
+            Vrienden vriendenToevoegenForm = new Vrienden();
             vriendenToevoegenForm.Show();
             this.Close();
         }

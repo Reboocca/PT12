@@ -3,7 +3,6 @@ D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\bin\Debug\Match-Ev
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\bin\Debug\Match-EventApp.pdb
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\bin\Debug\ObjectListView.dll
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\bin\Debug\ObjectListView.xml
-D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csprojAssemblyReference.cache
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.FestivalListForm.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.GroupSelect.resources
 D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.MessageForm.resources
@@ -54,3 +53,4 @@ C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-Ev
 C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.csproj.CoreCompileInputs.cache
 C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.exe
 C:\Users\Rick\Source\Repos\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match-EventApp.pdb
+D:\Gitblub\PRG\1\Gitkraken\PT12\Match-EventApp\Match-EventApp\obj\Debug\Match_EventApp.Vrienden.resources

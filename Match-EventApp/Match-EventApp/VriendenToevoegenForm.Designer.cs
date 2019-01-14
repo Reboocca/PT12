@@ -1,4 +1,6 @@
-﻿namespace Match_EventApp
+﻿using System;
+
+namespace Match_EventApp
 {
     partial class VriendenToevoegenForm
     {
@@ -143,7 +145,6 @@
             this.BTclose.Size = new System.Drawing.Size(24, 22);
             this.BTclose.TabIndex = 14;
             this.BTclose.UseVisualStyleBackColor = false;
-            this.BTclose.Click += new System.EventHandler(this.BTclose_Click_1);
             // 
             // panel7
             // 
@@ -180,7 +181,6 @@
             this.PerformLayout();
 
         }
-
         #endregion
         private System.Windows.Forms.Button BTinsta;
         private System.Windows.Forms.Button BTvrienden_toevoegen;

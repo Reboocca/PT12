@@ -329,5 +329,30 @@ namespace Match_EventApp.Classes
             }
             return succes;
         }
+
+        public bool addFriend(string i)
+        {
+            bool b = false;
+            connOpen();
+
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO " + database + ".vrienden (`idAccount1`, `idAccount2`, `status`) VALUES (" + i + ", 43, 1);");
+            cmd.Connection = connect;
+
+            try
+            {
+                int friend = cmd.ExecuteNonQuery();
+                if (friend > 0)
+                {
+                    b = true;
+                    connClose();
+                }
+            }
+            catch (Exception)
+            {
+                b = false;
+            }
+
+            return b;
+        }
     }
 }
